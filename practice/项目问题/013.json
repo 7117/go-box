@@ -1,0 +1,9 @@
+[
+  {
+    "appid": "aaa",
+    "secret": "bbb",
+    "psas": [
+      "/ums"
+    ]
+  }
+]
