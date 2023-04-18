@@ -14,7 +14,7 @@ type JsonStruct struct {
 }
 
 func main() {
-	f, err := os.Open("D:\\goitem\\go-box\\practice\\项目问题\\013.json")
+	f, err := os.Open("D:\\github\\go-box\\practice\\项目问题\\013.json")
 	if err != nil {
 		fmt.Println(err)
 	}
