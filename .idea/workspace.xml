@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16643d28-cfd0-47c3-9d80-5e0c9528987f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/concurrence/syncmap/001常用操作.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrence/008不常用的cmap函数.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrence/008不常用的cmap函数.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/interview-everyday/105互斥锁.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/interview-everyday/105互斥锁.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/项目问题/016字符串倒序.go" beforeDir="false" afterPath="$PROJECT_DIR$/practice/项目问题/016字符串倒序.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,8 +68,11 @@
       <recent name="D:\github\go-box\concurrence" />
       <recent name="D:\github\go-box\practice\项目问题" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github\go-box\concurrence\cmap" />
+    </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build 008不常用的cmap函数.go">
+  <component name="RunManager" selected="Go Build.go build 001常用操作.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="go-box" />
       <working_directory value="$PROJECT_DIR$" />
@@ -81,12 +82,12 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build 002使用互斥锁.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build 001常用操作.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-box" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/concurrence/002使用互斥锁.go" />
+      <filePath value="$PROJECT_DIR$/concurrence/syncmap/001常用操作.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build 004使用读写锁同时读写出现错误.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -133,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build 001常用操作.go" />
         <item itemvalue="Go Build.go build 008不常用的cmap函数.go" />
         <item itemvalue="Go Build.go build 005使用读写锁同时读写不出现错误.go" />
         <item itemvalue="Go Build.go build 004使用读写锁同时读写出现错误.go" />
         <item itemvalue="Go Build.go build 005使用互斥锁同时读写不出现错误.go" />
-        <item itemvalue="Go Build.go build 002使用互斥锁.go" />
       </list>
     </recent_temporary>
   </component>
