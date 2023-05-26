@@ -1,5 +1,6 @@
 package main
 
+//sync.Map在读多写少性能比较好，而concurrent-map 在key的hash度高的情况下性能比较好。
 import (
 	"fmt"
 	cmap "github.com/orcaman/concurrent-map/v2"

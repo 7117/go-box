@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16643d28-cfd0-47c3-9d80-5e0c9528987f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/concurrence/syncmap/001常用操作.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrence/slice/001并发：不指定索引append发生覆盖.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrence/slice/002并发：指定索引发生并发是正常的.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrence/slice/003使用单核cpu解决并发安全.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrence/slice/003使用多核cpu非并发安全.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrence/slice/004使用互斥锁保证并发安全.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrence/slice/005使用syncmap保证并发安全.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrence/slice/006使用cmap保证并发安全.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrence/slice/007使用channel保证并发安全.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrence/cmap/008不常用的cmap函数.go" beforeDir="false" afterPath="$PROJECT_DIR$/concurrence/cmap/008不常用的cmap函数.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,31 +48,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;configurable..is.expanded&quot;: &quot;false&quot;,
-    &quot;configurable.GoLibrariesConfigurable.is.expanded&quot;: &quot;true&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/github/go-box/concurrence&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.goide.configuration.GoLibrariesConfigurableProvider&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "configurable..is.expanded": "false",
+    "configurable.GoLibrariesConfigurable.is.expanded": "true",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "D:/github/go-box/concurrence/slice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.goide.configuration.GoLibrariesConfigurableProvider"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\go-box\concurrence\slice" />
       <recent name="D:\github\go-box\concurrence" />
       <recent name="D:\github\go-box\practice\项目问题" />
     </key>
@@ -72,7 +81,7 @@
       <recent name="D:\github\go-box\concurrence\cmap" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build 001常用操作.go">
+  <component name="RunManager" selected="Go Build.go build 003使用多核cpu非并发安全.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="go-box" />
       <working_directory value="$PROJECT_DIR$" />
@@ -82,44 +91,44 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build 001常用操作.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build 003使用多核cpu非并发安全.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-box" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/concurrence/syncmap/001常用操作.go" />
+      <filePath value="$PROJECT_DIR$/concurrence/slice/003使用多核cpu非并发安全.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build 004使用读写锁同时读写出现错误.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build 004使用互斥锁保证并发安全.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-box" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/concurrence/004使用读写锁同时读写出现错误.go" />
+      <filePath value="$PROJECT_DIR$/concurrence/slice/004使用互斥锁保证并发安全.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build 005使用互斥锁同时读写不出现错误.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build 005使用syncmap保证并发安全.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-box" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/concurrence/005使用互斥锁同时读写不出现错误.go" />
+      <filePath value="$PROJECT_DIR$/concurrence/slice/005使用syncmap保证并发安全.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build 005使用读写锁同时读写不出现错误.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build 006使用cmap保证并发安全.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-box" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/concurrence/005使用读写锁同时读写不出现错误.go" />
+      <filePath value="$PROJECT_DIR$/concurrence/slice/006使用cmap保证并发安全.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build 008不常用的cmap函数.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build 007使用channel保证并发安全.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-box" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/concurrence/008不常用的cmap函数.go" />
+      <filePath value="$PROJECT_DIR$/concurrence/slice/007使用channel保证并发安全.go" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -134,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build 001常用操作.go" />
-        <item itemvalue="Go Build.go build 008不常用的cmap函数.go" />
-        <item itemvalue="Go Build.go build 005使用读写锁同时读写不出现错误.go" />
-        <item itemvalue="Go Build.go build 004使用读写锁同时读写出现错误.go" />
-        <item itemvalue="Go Build.go build 005使用互斥锁同时读写不出现错误.go" />
+        <item itemvalue="Go Build.go build 003使用多核cpu非并发安全.go" />
+        <item itemvalue="Go Build.go build 007使用channel保证并发安全.go" />
+        <item itemvalue="Go Build.go build 006使用cmap保证并发安全.go" />
+        <item itemvalue="Go Build.go build 005使用syncmap保证并发安全.go" />
+        <item itemvalue="Go Build.go build 004使用互斥锁保证并发安全.go" />
       </list>
     </recent_temporary>
   </component>
